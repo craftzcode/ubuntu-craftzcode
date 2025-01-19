@@ -95,8 +95,8 @@ Restart PC
 
 Now add the path of Homebrew on ZSH
 ```shell
-echo >> /home/mo/.zshrc
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/mo/.zshrc
+echo >> /home/(username)/.zshrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/(username)/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 Install Powerlevel10k
