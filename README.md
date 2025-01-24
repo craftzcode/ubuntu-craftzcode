@@ -14,6 +14,11 @@ Install required dependencies
 sudo apt-get install build-essential procps curl file git
 ```
 
+Solana required dependencies (Optional)
+```shell
+sudo apt-get install build-essential procps curl file git pkg-config libudev-dev llvm libclang-dev protobuf-compiler libssl-dev
+```
+
 Download and run the Homebrew installation script
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
