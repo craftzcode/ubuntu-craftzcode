@@ -146,7 +146,7 @@ source ~/.zshrc
 - Install Cursor AI Editor
   - Follow this [guide](https://arcadian.cloud/how-to-install-cursor-ubuntu-24-10/#option-2-gear-lever) to install `Cursor AI Editor`
  
--  Install Jetbrains Mono Font
+- Install Jetbrains Mono Font
   - Follow this [installation](https://github.com/JetBrains/JetBrainsMono?tab=readme-ov-file#manual-installation)
 
 ## Install Eza & Zoxide
