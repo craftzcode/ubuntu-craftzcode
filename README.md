@@ -202,9 +202,14 @@ Exit and Re-run Wezterm
 brew install tmux
 ```
 
-Install TMUX Plugin Manager
+Install TMUX Plugin Manager (Optional)
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
+
+Copy or download my `statlusline.conf`
+```bash
+curl -o ~/.config/tmux/statusline.conf https://raw.githubusercontent.com/craftzcode/ubuntu-craftzcode/main/.config/tmux/statusline.conf
 ```
 
 Copy or download my `tmux.conf`
