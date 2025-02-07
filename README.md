@@ -6,18 +6,18 @@
 A comprehensive guide to setting up a development environment on Ubuntu, including system configuration, shell customization, and essential development tools.
 
 ## Initial System Update
-```bash
+```shell
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential procps curl file git
 ```
 
 ## Install Homebrew
-```bash
+```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Follow the instructions given by the installation script. You may need to add Homebrew to your PATH. The script will provide the exact commands, but they typically look like this
-```bash
+```shell
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
@@ -190,7 +190,10 @@ mkdir -p ~/.config/wezterm
 nano ~/.config/wezterm/wezterm.lua
 ```
 
-Copy my wezterm.lua
+Copy or download my `wezterm.lua`
+```shell
+curl -o ~/.config/wezterm/wezterm.lua https://raw.githubusercontent.com/craftzcode/ubuntu-craftzcode/main/.config/wezterm/wezterm.lua
+```
 
 Exit and Re-run Wezterm
 
@@ -204,7 +207,10 @@ Install TMUX Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
 
-Copy my tmux.conf
+Copy or download my `tmux.conf`
+```bash
+curl -o ~/.config/tmux/tmux.conf https://raw.githubusercontent.com/craftzcode/ubuntu-craftzcode/main/.config/tmux/tmux.conf
+```
 
 Restart TMUX
 ```lua
