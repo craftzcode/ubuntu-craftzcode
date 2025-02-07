@@ -1,0 +1,39 @@
+# Created by newuser for 5.9
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# History Setup
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+
+# Zoxide (Better CD)
+eval "$(zoxide init zsh)"
+
+# Alias
+alias ls="eza --icons=always"
+alias tree="eza --tree"
+alias cd="z"
+alias vim="nvim"
+alias reload-zsh="source ~/.zshrc"
+alias edit-zsh="code ~/.zshrc"
+alias code="~/AppImages/cursor.appimage --no-sandbox"
+alias edit-wezterm="code ~/.config/wezterm/wezterm.lua"
+alias edit-tmux="code ~/.config/tmux/tmux.conf"
+alias edit-tmux-statusline="code ~/.config/tmux/statusline.conf"
+
+# Bun completions
+[ -s "/home/craftz/.bun/_bun" ] && source "/home/craftz/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(oh-my-posh init zsh)"
