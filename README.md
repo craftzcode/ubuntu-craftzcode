@@ -1,32 +1,36 @@
-# Ubuntu Fresh Install (CraftzCode)
+# Ubuntu Fresh Install Guide for Development (CraftzCode)
 
-This guide will walk you through setting up a fresh installation of Ubuntu for development, including updating the system, installing necessary tools, and configuring your environment.
+![Ubuntu Development Setup](https://img.shields.io/badge/Ubuntu-24.04-orange?logo=ubuntu)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+A comprehensive guide to setting up a development environment on Ubuntu, including system configuration, shell customization, and essential development tools.
+
+## Table of Contents
+- [System Setup](#system-setup)
+- [Shell Customization](#shell-customization)
+- [Development Tools](#development-tools)
+- [Terminal Tools](#terminal-tools)
+- [Editors & Browsers](#editors--browsers)
+- [Neovim Setup](#neovim-setup)
+
+## Initial System Update
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y build-essential procps curl file git
+```
 
 ## Install Homebrew
-First, update your system
-```shell
-sudo apt-get update
-sudo apt-get upgrade
-```
-
-Install required dependencies
-```shell
-sudo apt-get install build-essential procps curl file git
-```
-
-Download and run the Homebrew installation script
-```shell
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Follow the instructions given by the installation script. You may need to add Homebrew to your PATH. The script will provide the exact commands, but they typically look like this
-```shell
-echo >> /home/(username)/.bashrc
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/(username)/.bashrc
+```bash
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 
-Verify the installation
+Verify Installation
 ```shell
 brew --version
 ```
