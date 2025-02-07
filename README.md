@@ -3,6 +3,8 @@
 ![Ubuntu Development Setup](https://img.shields.io/badge/Ubuntu-24.04-orange?logo=ubuntu)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
+A comprehensive guide to setting up a development environment on Ubuntu, including system configuration, shell customization, and essential development tools.
+
 ## Initial System Update
 ```bash
 sudo apt update && sudo apt upgrade -y
