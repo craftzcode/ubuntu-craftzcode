@@ -14,11 +14,6 @@ Install required dependencies
 sudo apt-get install build-essential procps curl file git
 ```
 
-Solana required dependencies (Optional)
-```shell
-sudo apt-get install build-essential procps curl file git pkg-config libudev-dev llvm libclang-dev protobuf-compiler libssl-dev
-```
-
 Download and run the Homebrew installation script
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -104,11 +99,15 @@ echo >> /home/(username)/.zshrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/(username)/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
-Install Powerlevel10k
-```shell
-brew install powerlevel10k
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
-```
+
+Customize ZSH Theme
+- Install Oh-My-Posh (Optional)
+  - Follow this [installation](https://ohmyposh.dev/docs/installation/linux)
+- Install Powerlevel10k (Optional)
+  - ```shell
+    brew install powerlevel10k
+    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+    ```
 
 Restart ZSH
 ```shell
@@ -133,15 +132,19 @@ Restart ZSH
 source ~/.zshrc
 ```
 
-## Install Zed
-```shell
-curl -f https://zed.dev/install.sh | sh
-```
+## Choose Code Editor
+- Install Zed
+  - ```shell
+    curl -f https://zed.dev/install.sh | sh
+    ```
+    
+  - Add the path of Zed on ZSH
+    - ```shell
+      echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.zshrc
+      ```
 
-Add the path of Zed on ZSH
-```shell
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.zshrc
-```
+- Install Cursor AI Editor
+  - Follow this [guide](https://arcadian.cloud/how-to-install-cursor-ubuntu-24-10/#option-2-gear-lever) to install `Cursor AI Editor`
 
 ## Install Eza & Zoxide
 ```shell
@@ -219,6 +222,11 @@ Install TMUX Plugins
 ```lua
 leader (ctrl + a) + shift + i
 ```
+
+## Install Zen Browser
+First setup the `Flatpak` by folling this [instructions](https://flathub.org/setup/Ubuntu)
+
+After that download the file of `Zen Browser` in [Flathub](https://flathub.org/apps/app.zen_browser.zen)
 
 ## Install Neovim
 ```shell
