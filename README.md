@@ -91,8 +91,7 @@ Restart PC
 
 Now add the path of Homebrew on ZSH
 ```shell
-echo >> /home/(username)/.zshrc
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/(username)/.zshrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 
@@ -102,7 +101,7 @@ Customize ZSH Theme
 - Install Powerlevel10k (Optional)
   - ```shell
     brew install powerlevel10k
-    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
     ```
 
 Restart ZSH
@@ -110,17 +109,12 @@ Restart ZSH
 source ~/.zshrc
 ```
 
-Install ZSH Autosuggestions & ZSH Syntax Highlighting
+Install ZSH Plugins
 ```shell
 brew install zsh-autosuggestions zsh-syntax-highlighting
 
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-# OR
-echo "source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-
 echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-# OR
-echo "source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 ```
 
 Restart ZSH
