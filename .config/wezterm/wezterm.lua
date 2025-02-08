@@ -4,7 +4,7 @@ local wezterm = require "wezterm"
 local config = wezterm.config_builder()
 
 -- Font
-config.font = wezterm.font("MesloLGS Nerd Font Mono")
+config.font = wezterm.font("Hack Nerd Font Mono")
 config.font_size = 16
 
 -- Tab
@@ -17,15 +17,15 @@ config.macos_window_background_blur = 10
 
 -- Colors
 config.colors = {
-  foreground = "#CBE0F0",
-  background = "#011423",
-  cursor_bg = "#47FF9C",
-  cursor_border = "#47FF9C",
-  cursor_fg = "#011423",
-  selection_bg = "#033259",
-  selection_fg = "#CBE0F0",
-  ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7" },
-  brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
+  foreground = "#F8F8F2",
+  background = "#1D1F21",
+  cursor_bg = "#FF79C6",
+  cursor_border = "#FF79C6",
+  cursor_fg = "#1D1F21",
+  selection_bg = "#444444",
+  selection_fg = "#F8F8F2",
+  ansi = { "#FF79C6", "#BD2C40", "#8BC34A", "#F1C40F", "#4FC1E9", "#FB62C6", "#34A85A", "#F8F8F2" },
+  brights = { "#FF99B5", "#D75353", "#A7F070", "#FFD866", "#6A9BCB", "#EC6CBC", "#5BC477", "#F8F8F2" },
 }
 
 return config
