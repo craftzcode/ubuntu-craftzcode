@@ -98,6 +98,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 Customize ZSH Theme
 - Install Oh-My-Posh (Optional)
   - Follow this [installation](https://ohmyposh.dev/docs/installation/linux)
+  - Copy or download my theme `craftzcode.omp.json`
+    ```shell
+    curl -o ~/.config/oh-my-posh/craftzcode.omp.json https://raw.githubusercontent.com/craftzcode/ubuntu-craftzcode/main/.config/oh-my-posh/craftzcode.omp.json
+    ```
 - Install Powerlevel10k (Optional)
   - ```shell
     brew install powerlevel10k
