@@ -5,6 +5,24 @@
 
 A comprehensive guide to setting up a development environment on Ubuntu, including system configuration, shell customization, and essential development tools.
 
+## Table of Contents
+
+1.  [Initial System Update](#initial-system-update)
+2.  [Install Homebrew](#install-homebrew)
+3.  [Setup Git](#setup-git)
+4.  [Install ZSH](#install-zsh)
+5.  [Choose Code Editor](#choose-code-editor)
+    *   [Install Zed](#install-zed)
+    *   [Install Cursor AI Editor](#install-cursor-ai-editor)
+    *   [Install Jetbrains Mono Font](#install-jetbrains-mono-font)
+6.  [Install Eza & Zoxide](#install-eza--zoxide)
+7.  [Install Node](#install-node)
+8.  [Install Bun](#install-bun)
+9.  [Install Wezterm](#install-wezterm)
+10. [Install TMUX](#install-tmux)
+11. [Install Zen Browser](#install-zen-browser)
+12. [Install Neovim](#install-neovim)
+
 ## Initial System Update
 ```shell
 sudo apt update && sudo apt upgrade -y
